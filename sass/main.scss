@@ -1,7 +1,7 @@
 /*
 Theme Name: Nutrinter
 Author: Esau Mena
-Author URI: http://eamena.com/
+Author URI: https://eamena.com/
 Description: Xustom theme for Nutrinter.net
 Version: 1.0
 License: GNU General Public License v2 or later
@@ -28,37 +28,12 @@ body {
     max-width: 275px;
 }
 
-.nav-link {
+.navbar-light .navbar-nav .nav-link {
     color: $primary-color;
     &:hover {
         color: $link-hover-color;
     }
 }
-
-/* .navbar-toggler-icon {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-}
-// Hero Section
-/* .hero {
-    background: url('http://nutrinter.net/wp-content/uploads/2022/05/Banner.png') no-repeat center center;
-    background-size: cover;
-    color: $font-color;
-    padding: 200px 0;
-
-    h1 {
-        font-weight: bold;
-    }
-
-    .btn-primary {
-        background-color: $primary-color;
-        border: none;
-        font-size: 1.125rem;
-        font-weight: bold;
-        padding: 0.75rem 1.25rem;
-        border-radius: 5px;
-    }
-} */
 
 .hero{
 	background: url(http://nutrinter.net/wp-content/uploads/2022/05/Banner.png) no-repeat center center ;
@@ -69,6 +44,7 @@ body {
 	margin: 0 auto;
 	padding:200px;
 }
+
 // Footer Styles
 .footer{
     font-size: 0.9rem;
@@ -76,7 +52,6 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: fit-content;
     }
     background: #22ab70;
 }
@@ -85,57 +60,47 @@ body {
 	size: 12px;
 	font-weight: 400;
     color: #fff;
-	//padding: ;
 }
-/* .footer h6 {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-.footer p {
-    margin: 0;
-    font-size: 14px;
-} */
 
 .horario{
 	margin-left: 115px;
 }
+
 .horario2{
 	margin-top: 5px;
 	margin-left: 55px;
 }
+
 .numTel{
 	color: #fff;
 }
+
 .numTel:hover{
 	color: #fff;
 }
+
 h5{
 	font-size: 14px;
 	font-weight: 600;
 }
+
 small{
 	font-size: 11px;
 }
+
 small a{
 	color: #f24822;
 }
+
 small a:hover{
 	color: #f24822;
 }
+
 .chicharos{
 	max-width: 50%;
 }
-/* .card-deck {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-  }
-  .card {
-    flex: 1 0 auto;
-    border: none;
-    background: #22ab70;
-  } */
-  .right {
+
+.right {
     position: absolute;
     right: 0px;
     width: 300px;
