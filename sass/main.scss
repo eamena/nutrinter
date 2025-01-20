@@ -36,7 +36,7 @@ body {
 }
 
 .hero{
-	background: url(http://nutrinter.net/wp-content/uploads/2022/05/Banner.png) no-repeat center center ;
+	background: url(/img/hero_copy.jpg) no-repeat center center ;
 	background-size: cover;
 }
 .hero-text{
@@ -44,7 +44,9 @@ body {
 	margin: 0 auto;
 	padding:200px;
 }
-
+h1{
+    color:$font-color;
+}
 button{
 	height: 50px;
     min-width: 185px;

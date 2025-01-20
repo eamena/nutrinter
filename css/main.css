@@ -25,7 +25,7 @@ body {
 }
 
 .hero {
-  background: url(/img/hero.jpg) no-repeat center center;
+  background: url(/img/hero_copy.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -33,6 +33,10 @@ body {
   text-align: center;
   margin: 0 auto;
   padding: 200px;
+}
+
+h1 {
+  color: #fff;
 }
 
 button {
