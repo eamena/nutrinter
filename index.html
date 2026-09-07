@@ -1,179 +1,270 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es-MX">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nutrinter</title>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Nutrinter | Nutrióloga Clínica en Ciudad Juárez</title>
+  <meta name="description" content="Nutrinter ofrece consulta de nutrición clínica en Ciudad Juárez para control de peso, diabetes, hipertensión, salud renal y deportiva. Agenda por WhatsApp.">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="nutrióloga en Ciudad Juárez, nutrición clínica, control de peso, diabetes, hipertensión, consulta nutricional">
+  <meta name="author" content="Nutrinter">
+  <link rel="canonical" href="https://nutrinter.net/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:title" content="Nutrinter | Nutrióloga Clínica en Ciudad Juárez">
+  <meta property="og:description" content="Atención nutricional personalizada para mejorar tu salud con un plan clínico claro, profesional y sostenible.">
+  <meta property="og:url" content="https://nutrinter.net/">
+  <meta property="og:image" content="https://nutrinter.net/img/hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nutrinter | Nutrióloga Clínica en Ciudad Juárez">
+  <meta name="twitter:description" content="Consulta nutricional clínica y personalizada en Ciudad Juárez. Agenda por WhatsApp.">
+  <meta name="twitter:image" content="https://nutrinter.net/img/hero.jpg">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "Nutrinter",
+      "image": "https://nutrinter.net/img/hero.jpg",
+      "url": "https://nutrinter.net/",
+      "telephone": "+52 656 168 1996",
+      "description": "Consulta de nutrición clínica para control de peso, diabetes, hipertensión y salud integral.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Adolfo de la Huerta #742, Planta alta local #7, Fracc: El Colegio",
+        "addressLocality": "Ciudad Juárez",
+        "addressRegion": "Chihuahua",
+        "addressCountry": "MX"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "12:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "17:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "16:00"
+        }
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué incluye una consulta de nutrición clínica?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Incluye evaluación nutricional, diagnóstico, plan personalizado y seguimiento clínico según tus objetivos y condición de salud."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Atienden pacientes con diabetes o hipertensión?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Se diseña una intervención nutricional para diabetes, hipertensión y otras condiciones metabólicas, con monitoreo profesional."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo puedo agendar una cita?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Puedes agendar por WhatsApp al 656-168-1996 o por llamada telefónica en horario de atención."
+          }
+        }
+      ]
+    }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
 </head>
-
 <body>
-  <div class="container py-3 my-3  border-0">
-    <div class="row">
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand" href="#inicio" aria-label="Nutrinter inicio">
+          <img src="/img/logo.svg" alt="Logotipo de Nutrinter" class="site-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-      <nav class="navbar navbar-expand-sm navbar-light bg-light bg-white sticky-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="/img/logo.svg" height="79.69" loading="lazy" />
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+  <main>
+    <section id="inicio" class="hero-section">
+      <div class="hero-overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <p class="hero-kicker">Consulta nutricional clínica en Ciudad Juárez</p>
+              <h1>Atención nutricional profesional para mejorar tu salud con resultados sostenibles</h1>
+              <p class="hero-description">Diseño de planes personalizados con enfoque clínico para acompañarte paso a paso en tu proceso.</p>
+              <div class="hero-actions">
+                <a class="btn btn-primary btn-cta" href="https://wa.me/526561681996">Agendar por WhatsApp</a>
+                <a class="btn btn-outline-light btn-cta" href="tel:+526561681996">Llamar ahora</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="collapseA navbar-collapseB" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#quien">Quienes Somos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contacto">Contacto</a>
-              </li>
+    <section id="servicios" class="section-spacing">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <img src="/img/hero.jpg" class="img-fluid rounded-3 section-image" alt="Consulta de nutrición clínica personalizada" loading="lazy" width="1200" height="810">
+          </div>
+          <div class="col-lg-6">
+            <h2>Servicios de nutrición clínica</h2>
+            <p>Proceso del Cuidado Nutricional orientado a evaluar, diagnosticar e intervenir de forma segura para cada paciente.</p>
+            <ul class="service-list">
+              <li>Control prenatal</li>
+              <li>Control de pérdida de peso</li>
+              <li>Diabetes e hipertensión</li>
+              <li>Enfermedad renal, hepática y gastrointestinal</li>
+              <li>Enfermedad de tiroides (hipotiroidismo e hipertiroidismo)</li>
+              <li>Infantes y adolescentes (bajo peso u obesidad)</li>
+              <li>Alimentación vegetariana y nutrición deportiva</li>
             </ul>
           </div>
         </div>
-      </nav>
+      </div>
+    </section>
 
-      <!-- Hero Section -->
-      <!-- <section class="text-center text-white"> -->
-      <!-- <div class="hero"> -->
+    <section id="sobre-mi" class="section-spacing bg-light">
       <div class="container">
-        <div class="row hero">
-          <div class="col-sm-12 d-flex justify-content-center">
-            <div class="hero-text">
-              <h1>Proceso de Cuidado Nutricional</h1>
-              <a href="https://wa.me/+526561681996">
-                <button class="mt-3">Comunicate con Nosotros</button>
-              </a>
-            </div>
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6 order-lg-2">
+            <img src="/img/katie-smith-uQs1802D0CQ-unsplash.jpg" class="img-fluid rounded-3 section-image" alt="Especialista en nutrición clínica brindando asesoría profesional" loading="lazy" width="1200" height="801">
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <h2>¿Quién soy?</h2>
+            <p>Claudia Ivett Ramos, Nutrióloga Clínica egresada de la UACJ. Certificada en Proceso del Cuidado Nutricional y Terapia Médica Nutricional (MNT &amp; NCP) por el Instituto Mexicano de Nutriología Clínica.</p>
+            <ul class="credential-list">
+              <li>Diplomado en obesidad, síndrome metabólico y enfermedad renal</li>
+              <li>Diplomado en diabetes mellitus</li>
+              <li>Diplomado en gastroenterología</li>
+              <li>Maestría en nutrición clínica egresada de la UAD</li>
+            </ul>
           </div>
         </div>
       </div>
-      <!-- </div> -->
-      <!-- </section> -->
+    </section>
 
+    <section class="section-spacing">
       <div class="container">
-        <!-- <div class="d-flex justify-content-center"> -->
-          <!-- About Section -->
-          <div id="quien" class="container my-5">
-            <div class="row">
-              <div class="col-md-5">
-                <img src="/img/spinach.jpg" class="img-fluid rounded" alt="About Image">
-              </div>
-              <div class="col-md-5">
-                <h2>¿Quién Soy?</h2>
-                <p>Claudia Ivett Ramos, Nutrióloga Clínica egresada de la UACJ. Certificada en Proceso del Cuidado
-                  Nutricional y Terapia Medica Nutricional (MNT & NCP) por el Instituto Mexicano de Nutriología Clínica.
-                </p>
-                <ul class="list-unstyled">
-                  <li>Diplomado Obesidad, Síndrome Metabólico y Enfermedad Renal</li>
-                  <li>Diplomado Diabetes Mellitus</li>
-                  <li>Diplomado Gastroenterología</li>
-                  <li>Maestría en Nutrición Clínica egresada de la UAD</li>
-                </ul>
-              </div>
-            </div>
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <article class="value-card">
+              <h3>Enfoque personalizado</h3>
+              <p>Tu diagnóstico y plan alimenticio se adapta a tus objetivos, historial médico y estilo de vida.</p>
+            </article>
           </div>
-
-          <!-- Services Section -->
-          <div id="services" class="container my-5">
-            <div class="row">  
-              <div class="col-md-5">
-                <img src="/img/katie-smith-uQs1802D0CQ-unsplash.jpg" class="img-fluid rounded" alt="About Image">
-              </div>
-              <div class="col-md-5">              
-                <h2>¿Qué servicios ofrezco?</h2>
-                <p>Proceso del Cuidado Nutricional enfocado en evaluar, diagnosticar y diseñar el monitoreo y la
-                  intervención nutricional adecuada para cada paciente.</p>
-                <ul>
-                  <li>Control Prenatal</li>
-                  <li>Control Perdida Peso</li>
-                  <li>Diabéticos</li>
-                  <li>Hipertensos</li>
-                  <li>Enfermedad Renal</li>
-                  <li>Enfermedad Hepática</li>
-                  <li>Enfermedad Gastrointestinal</li>
-                  <li>Enfermedad Tiroides (Hipotiroidismo – Hipertiroidismo)</li>
-                  <li>Infantes y Adolescentes (Bajo Peso u Obesidad)</li>
-                  <li>Vegetarianos</li>
-                  <li>Nutrición en el Deporte</li>
-                </ul>
-                </div>
-              </div>              
-            </div>
-          <!-- </div> -->
-
-          <!-- Contact Section -->
-          <div id="contacto" class="container my-5">
-            <div class="row">
-              <div class="col-md-5">
-                <h2 class="text-center">Comunicate con nosotros</h2>
-                <div class="text-center">
-                  <a href="https://wa.me/+526561681996" style="text-decoration: none;">
-                    <h2 style="color:#22ab70;">
-                      656-168-1996
-                    </h2>
-                    <img src="/img/icons8-whatsapp-480.png" style="width:180px">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-5">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3078.4633526202747!2d-106.44688314310118!3d31.73042833915033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e759548f7caafd%3A0xdb69ba228d291dc2!2sCalle%20Adolfo%20De%20La%20Huerta!5e1!3m2!1sen!2sus!4v1649443312409!5m2!1sen!2sus"
-                  width="500" height="400" style="border: 0" allowfullscreen="" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-            </div>
+          <div class="col-lg-4">
+            <article class="value-card">
+              <h3>Seguimiento clínico</h3>
+              <p>Monitoreo continuo para evaluar avances, ajustar estrategias y mantener resultados a largo plazo.</p>
+            </article>
           </div>
-
+          <div class="col-lg-4">
+            <article class="value-card">
+              <h3>Atención profesional</h3>
+              <p>Consulta basada en protocolos de nutrición clínica para condiciones metabólicas y de salud integral.</p>
+            </article>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Footer -->
-      <footer class="footer text-light mt-auto py-3">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 mb-3 mb-md-0">
-              <h6>DIRECCIÓN</h6>
-              <p>Adolfo de la Huerta #742<br>Planta alta local #7<br>Fracc: El Colegio </p>
-            </div>
-            <div class="col-md-4 mb-3 mb-md-0">
-              <h6>HORARIO</h6>
-              <p>Lunes - Viernes: <br>9am - 12pm <br>5pm - 7pm<br>Sábado: <br>9am - 4pm</p>
-            </div>
-            <div class="col-md-4">
-              <h6>TELÉFONO</h6>
-              <p><a href="https://wa.me/+526561681996" class="numTel">656-168-1996</a></p>
+    <section class="section-spacing">
+      <div class="container">
+        <h2>Preguntas frecuentes</h2>
+        <div class="faq-list">
+          <article class="faq-item">
+            <h3>¿Qué incluye una consulta de nutrición clínica?</h3>
+            <p>Incluye evaluación nutricional, diagnóstico, plan personalizado y seguimiento clínico según tus objetivos y condición de salud.</p>
+          </article>
+          <article class="faq-item">
+            <h3>¿Atienden pacientes con diabetes o hipertensión?</h3>
+            <p>Sí. Se diseña una intervención nutricional para diabetes, hipertensión y otras condiciones metabólicas, con monitoreo profesional.</p>
+          </article>
+          <article class="faq-item">
+            <h3>¿Cómo puedo agendar una cita?</h3>
+            <p>Puedes agendar por WhatsApp al 656-168-1996 o por llamada telefónica en horario de atención.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section-spacing bg-light">
+      <div class="container">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-5">
+            <div class="contact-card h-100">
+              <h2>Contacto</h2>
+              <p>Agenda tu consulta y recibe una atención nutricional profesional y cercana.</p>
+              <p class="contact-item"><strong>Teléfono / WhatsApp:</strong> <a href="https://wa.me/526561681996">656-168-1996</a></p>
+              <p class="contact-item"><strong>Dirección:</strong> Adolfo de la Huerta #742, Planta alta local #7, Fracc. El Colegio</p>
+              <p class="contact-item"><strong>Horario:</strong> Lunes a Viernes 9:00 a 12:00 y 17:00 a 19:00. Sábado 9:00 a 16:00</p>
             </div>
           </div>
-        </div>
-        <div class="container border-0">
-          <div class="row">
-            <small>&copy; Nutrinter 2022 | <a href="https://wwww.esaumena.com" class="text-light">WebMaster</a></small>
+          <div class="col-lg-7">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3078.4633526202747!2d-106.44688314310118!3d31.73042833915033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e759548f7caafd%3A0xdb69ba228d291dc2!2sCalle%20Adolfo%20De%20La%20Huerta!5e1!3m2!1sen!2sus!4v1649443312409!5m2!1sen!2sus" width="100%" height="100%" style="border:0; min-height:360px;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de consultorio Nutrinter"></iframe>
           </div>
         </div>
-      </footer>
+      </div>
+    </section>
+  </main>
 
+  <footer class="site-footer py-4">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <h3>Dirección</h3>
+          <p>Adolfo de la Huerta #742<br>Planta alta local #7<br>Fracc. El Colegio</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Horario</h3>
+          <p>Lunes a Viernes: 9:00 - 12:00 y 17:00 - 19:00<br>Sábado: 9:00 - 16:00</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Contacto</h3>
+          <p><a href="https://wa.me/526561681996">656-168-1996</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <small>&copy; Nutrinter 2026 | <a href="https://www.esaumena.com">Webmaster</a></small>
+      </div>
     </div>
-  </div>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
-</body>
+  </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
 </html>
