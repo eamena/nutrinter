@@ -43,14 +43,14 @@ body {
 }
 
 .hero-section {
-  background: url(/img/spinach.jpg) no-repeat center center;
+  background: url("../img/hero-modern.jpg") no-repeat center center;
   background-size: cover;
   min-height: 560px;
 }
 
 .hero-overlay {
   min-height: 560px;
-  background: linear-gradient(105deg, rgba(24, 39, 52, 0.88) 0%, rgba(24, 39, 52, 0.75) 52%, rgba(24, 39, 52, 0.3) 100%);
+  background: linear-gradient(105deg, rgba(7, 48, 32, 0.97) 0%, rgba(12, 74, 49, 0.9) 52%, rgba(12, 74, 49, 0.64) 100%);
   display: flex;
   align-items: center;
 }
