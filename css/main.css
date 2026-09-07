@@ -2,115 +2,219 @@
 Theme Name: Nutrinter
 Author: Esau Mena
 Author URI: https://eamena.com/
-Description: Xustom theme for Nutrinter.net
+Description: Custom theme for Nutrinter.net
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: Nutrinter
 */
 @import "../css/bootstrap.min.css";
+
+:root {
+  --brand-green: #198754;
+  --brand-orange: #db5f23;
+  --ink: #1f2933;
+  --muted: #52606d;
+  --bg-soft: #f7faf9;
+  --border-soft: #dde3e8;
+}
+
 body {
   font-family: "Roboto", sans-serif;
+  color: var(--ink);
+  line-height: 1.6;
+  background-color: #fff;
 }
 
-.logo {
-  max-width: 275px;
+.site-logo {
+  width: 175px;
+  height: auto;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: #f24822;
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:visited {
+  color: var(--ink);
+  font-weight: 500;
+  margin-left: 0.4rem;
 }
+
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #f59433;
+  color: var(--brand-orange);
 }
 
-.hero {
-  background: url(/img/hero_copy.jpg) no-repeat center center;
+.hero-section {
+  background: url(/img/spinach.jpg) no-repeat center center;
   background-size: cover;
+  min-height: 560px;
 }
 
-.hero-text {
-  text-align: center;
-  margin: 0 auto;
-  padding: 200px;
+.hero-overlay {
+  min-height: 560px;
+  background: linear-gradient(105deg, rgba(24, 39, 52, 0.88) 0%, rgba(24, 39, 52, 0.75) 52%, rgba(24, 39, 52, 0.3) 100%);
+  display: flex;
+  align-items: center;
+}
+
+.hero-kicker {
+  font-weight: 500;
+  color: #d4e7db;
+  margin-bottom: 0.5rem;
 }
 
 h1 {
   color: #fff;
+  font-size: clamp(1.9rem, 4vw, 2.9rem);
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
-button {
-  height: 50px;
-  min-width: 185px;
-  background-color: #f24822;
-  border: 0;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 0 20px;
-  border-radius: 5px;
+.hero-description {
+  color: #ecf1f4;
+  font-size: 1.05rem;
+  max-width: 640px;
 }
 
-.footer {
-  font-size: 0.9rem;
-  background: #22ab70;
-}
-.footer .container {
+.hero-actions {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.6rem;
 }
 
-.footer-list {
-  list-style: none;
-  size: 12px;
-  font-weight: 400;
+.btn-cta {
+  padding: 0.68rem 1.2rem;
+  font-weight: 500;
+  border-radius: 0.45rem;
+}
+
+.btn-primary {
+  background-color: var(--brand-orange);
+  border-color: var(--brand-orange);
+}
+
+.btn-primary:hover {
+  background-color: #bf4f1a;
+  border-color: #bf4f1a;
+}
+
+.section-spacing {
+  padding: 4.5rem 0;
+}
+
+h2 {
+  font-size: clamp(1.45rem, 3vw, 2rem);
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.16rem;
+  margin-bottom: 0.65rem;
+}
+
+.section-image {
+  box-shadow: 0 14px 28px rgba(16, 24, 40, 0.12);
+}
+
+.service-list,
+.credential-list {
+  padding-left: 1.1rem;
+  color: var(--muted);
+}
+
+.service-list li,
+.credential-list li {
+  margin-bottom: 0.45rem;
+}
+
+.value-card {
+  height: 100%;
+  border: 1px solid var(--border-soft);
+  border-radius: 0.75rem;
+  background-color: #fff;
+  padding: 1.3rem 1.2rem;
+  box-shadow: 0 8px 18px rgba(16, 24, 40, 0.06);
+}
+
+.faq-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.faq-item {
+  border: 1px solid var(--border-soft);
+  border-radius: 0.7rem;
+  padding: 1rem 1.1rem;
+  background-color: #fff;
+}
+
+.faq-item p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.contact-card {
+  background: #fff;
+  border: 1px solid var(--border-soft);
+  border-radius: 0.75rem;
+  padding: 1.4rem;
+  box-shadow: 0 8px 18px rgba(16, 24, 40, 0.06);
+}
+
+.contact-card a {
+  color: var(--brand-green);
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+.contact-item {
+  margin-bottom: 0.75rem;
+  color: var(--muted);
+}
+
+.site-footer {
+  font-size: 0.95rem;
+  color: #e5ebee;
+  background: #1e3a2f;
+}
+
+.site-footer h3 {
+  font-size: 1rem;
   color: #fff;
 }
 
-.horario {
-  margin-left: 115px;
+.site-footer p {
+  margin-bottom: 0;
+  color: #cad7de;
 }
 
-.horario2 {
-  margin-top: 5px;
-  margin-left: 55px;
-}
-
-.numTel {
+.site-footer a,
+.site-footer a:visited {
   color: #fff;
+  text-decoration: none;
 }
 
-.numTel:hover {
-  color: #fff;
+.site-footer a:hover {
+  text-decoration: underline;
 }
 
-h5 {
-  font-size: 14px;
-  font-weight: 600;
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  margin-top: 1.25rem;
+  padding-top: 1.05rem;
 }
 
 small {
-  font-size: 11px;
+  font-size: 0.8rem;
+  color: #cad7de;
 }
 
-small a {
-  color: #f24822;
-}
-
-small a:hover {
-  color: #f24822;
-}
-
-.chicharos {
-  max-width: 50%;
-}
-
-.right {
-  position: absolute;
-  right: 0px;
-  width: 300px;
-  padding: 10px;
+@media (max-width: 991.98px) {
+  .section-spacing {
+    padding: 3.5rem 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
