@@ -116,23 +116,48 @@
               "text": "Puedes agendar por WhatsApp al 656-168-1996 o por llamada telefónica en horario de atención."
             }
           }
-        ]
-      }
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
-  <body>
-    <header class="site-header sticky-top">
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-white shadow-sm"
-        aria-label="Navegación principal"
-      >
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo puedo agendar una cita?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Puedes agendar por WhatsApp al 656-168-1996 o por llamada telefónica en horario de atención."
+          }
+        }
+      ]
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand" href="#inicio" aria-label="Nutrinter inicio">
+          <img src="./img/logo.svg" alt="Logotipo de Nutrinter" class="site-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero-section">
+      <div class="hero-overlay">
         <div class="container">
           <a class="navbar-brand" href="#inicio" aria-label="Nutrinter inicio">
             <img
@@ -207,36 +232,104 @@
         </div>
       </section>
 
-      <section id="servicios" class="section-spacing">
-        <div class="container">
-          <div class="row align-items-center g-4">
-            <div class="col-lg-6">
-              <img
-                src="/img/hero.jpg"
-                class="img-fluid rounded-3 section-image"
-                alt="Consulta de nutrición clínica personalizada"
-                loading="lazy"
-                width="1200"
-                height="810"
-              />
-            </div>
-            <div class="col-lg-6">
-              <h2>Servicios de nutrición clínica</h2>
-              <p>
-                Proceso del Cuidado Nutricional orientado a evaluar,
-                diagnosticar e intervenir de forma segura para cada paciente.
-              </p>
-              <ul class="service-list">
-                <li>Control prenatal</li>
-                <li>Control de pérdida de peso</li>
-                <li>Diabetes e hipertensión</li>
-                <li>Enfermedad renal, hepática y gastrointestinal</li>
-                <li>
-                  Enfermedad de tiroides (hipotiroidismo e hipertiroidismo)
-                </li>
-                <li>Infantes y adolescentes (bajo peso u obesidad)</li>
-                <li>Alimentación vegetariana y nutrición deportiva</li>
-              </ul>
+    <section id="servicios" class="section-spacing">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <img src="./img/services-modern.jpg" class="img-fluid rounded-3 section-image" alt="Platillos frescos y balanceados para un plan nutricional saludable" loading="lazy" width="1600" height="1089">
+          </div>
+          <div class="col-lg-6">
+            <h2>Servicios de nutrición clínica</h2>
+            <p>Proceso del Cuidado Nutricional orientado a evaluar, diagnosticar e intervenir de forma segura para cada paciente.</p>
+            <ul class="service-list">
+              <li>Control prenatal</li>
+              <li>Control de pérdida de peso</li>
+              <li>Diabetes e hipertensión</li>
+              <li>Enfermedad renal, hepática y gastrointestinal</li>
+              <li>Enfermedad de tiroides (hipotiroidismo e hipertiroidismo)</li>
+              <li>Infantes y adolescentes (bajo peso u obesidad)</li>
+              <li>Alimentación vegetariana y nutrición deportiva</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section-spacing bg-light">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6 order-lg-2">
+            <img src="./img/about-modern.jpg" class="img-fluid rounded-3 section-image" alt="Consulta profesional en nutrición clínica y hábitos saludables" loading="lazy" width="1600" height="1100">
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <h2>¿Quién soy?</h2>
+            <p>Claudia Ivett Ramos, Nutrióloga Clínica egresada de la UACJ. Certificada en Proceso del Cuidado Nutricional y Terapia Médica Nutricional (MNT &amp; NCP) por el Instituto Mexicano de Nutriología Clínica.</p>
+            <ul class="credential-list">
+              <li>Diplomado en obesidad, síndrome metabólico y enfermedad renal</li>
+              <li>Diplomado en diabetes mellitus</li>
+              <li>Diplomado en gastroenterología</li>
+              <li>Maestría en nutrición clínica egresada de la UAD</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-spacing">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <article class="value-card">
+              <h3>Enfoque personalizado</h3>
+              <p>Tu diagnóstico y plan alimenticio se adapta a tus objetivos, historial médico y estilo de vida.</p>
+            </article>
+          </div>
+          <div class="col-lg-4">
+            <article class="value-card">
+              <h3>Seguimiento clínico</h3>
+              <p>Monitoreo continuo para evaluar avances, ajustar estrategias y mantener resultados a largo plazo.</p>
+            </article>
+          </div>
+          <div class="col-lg-4">
+            <article class="value-card">
+              <h3>Atención profesional</h3>
+              <p>Consulta basada en protocolos de nutrición clínica para condiciones metabólicas y de salud integral.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-spacing">
+      <div class="container">
+        <h2>Preguntas frecuentes</h2>
+        <div class="faq-list">
+          <article class="faq-item">
+            <h3>¿Qué incluye una consulta de nutrición clínica?</h3>
+            <p>Incluye evaluación nutricional, diagnóstico, plan personalizado y seguimiento clínico según tus objetivos y condición de salud.</p>
+          </article>
+          <article class="faq-item">
+            <h3>¿Atienden pacientes con diabetes o hipertensión?</h3>
+            <p>Sí. Se diseña una intervención nutricional para diabetes, hipertensión y otras condiciones metabólicas, con monitoreo profesional.</p>
+          </article>
+          <article class="faq-item">
+            <h3>¿Cómo puedo agendar una cita?</h3>
+            <p>Puedes agendar por WhatsApp al 656-168-1996 o por llamada telefónica en horario de atención.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section-spacing bg-light">
+      <div class="container">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-5">
+            <div class="contact-card h-100">
+              <h2>Contacto</h2>
+              <p>Agenda tu consulta y recibe una atención nutricional profesional y cercana.</p>
+              <p class="contact-item"><strong>Teléfono / WhatsApp:</strong> <a href="https://wa.me/526561681996">656-168-1996</a></p>
+              <p class="contact-item"><strong>Dirección:</strong> Adolfo de la Huerta #742, Planta alta local #7, Fracc. El Colegio</p>
+              <p class="contact-item"><strong>Horario:</strong> Lunes a Viernes 9:00 a 12:00 y 17:00 a 19:00. Sábado 9:00 a 16:00</p>
             </div>
           </div>
         </div>
